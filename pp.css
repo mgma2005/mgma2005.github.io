@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+body{
+    background: #403B4A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E7E9BB, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    margin: 0;
+}
+.wellcome{
+    width: 100%;
+    color: white;
+    background-color: black;
+    font-size: 5vw;
+    font-family: sans-serif;
+    text-align: center;
+    border-top: 4px solid red;
+    border-bottom: 4px solid red;
+}
+.encabezado{  
+    text-align: center;    
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+    font-size: 3vw;
+    border-bottom: 4px solid red;
+    
+    
+}
+.btns{
+    width: 100%;
+    background-color: rgb(5, 28, 70);
+    color: red;
+}
+.cont{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    font-size: 2vw;
+    font-family: sans-serif;
+    margin-top: 10%;
+    
+}
+.add{
+    margin-left: 28%;
+}
+.instr{
+    
+    font-size: 2.5vw;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+.parrafo{
+    font-size: 3vw;
+}
+.thissite{
+    color: white;
+    margin-top: 40%;
+    font-size: 3vw;
+    margin-left: 20%;
+}
+.email{
+    
+    color: white;
+    font-size: 3vw;
+    margin-left: 20%;
+    margin-bottom: 20%;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 4px solid red;
+    border-bottom: 4px solid red;
+    margin-top: 10%;
+    margin-bottom: 0;
+    width: auto;
+    height: auto;
+    background-color: black;           
+}
+
+
+/*botones*/
+
+input[type="file"]{
+    display: none;
+}
+.btn{
+    
+    margin-left: 25%;
+    font-size: 2vw;
+    color: red;
+    background-color: rgb(5, 28, 70);
+    margin-top: 6%;
+    width: 13vw;
+}
+.ampi{
+    
+    background-color: black;
+    color: rgb(12, 12, 117);
+    text-align: right;
+    font-size: 4vw;
+    margin-top: -11.2vw;
+    margin-left: 280%;
+    font-family: Courier New;
+}
+.V{
+    display: grid;
+    grid-template-columns: 6;
+    color: rgb(110, 4, 4);
+    font-family: Courier;
+    font-size: 15vw;
+    margin-left: 250%;
+    margin-top: -80%;
+    
+    animation-name: vamp;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    -webkit-transform-origin-x: 5vw;
+    animation-iteration-count: infinite;
+}
+@keyframes vamp{
+    from{transform: rotateY(0deg);}
+    to{transform: rotateY(360deg);}
+}
+.thissite{
+    display: grid;
+    grid-template-columns: 6;
+    font-size: 2.5vw;
+    width: 210%;
+    margin-top: 20%;
+}
+.drag-drop:hover .pulsating {
+animation: pulse1 1s linear infinite;
+animation-direction: alternate ;
+-webkit-animation: pulse1 1s linear infinite;
+-webkit-animation-direction: alternate ;
+}
+                
+                /* Keyframing de la animación */
+                 
+                @keyframes pulse1 {
+                0% { color: rgba(225, 225, 225, .75); }
+                50% { color: rgba(225, 225, 225, 0.25); }
+                100% { color: rgba(225, 225, 225, .75); }
+                }
+                 
+                @-moz-keyframes pulse1 {
+                0% { color: rgba(225, 225, 225, .75); }
+                50% { color: rgba(225, 225, 225, 0.25); }
+                100% { color: rgba(225, 225, 225, .75); }
+                }
+                 
+                @-webkit-keyframes pulse1 {
+                0% { color: rgba(225, 225, 225, .75); }
+                50% { color: rgba(225, 225, 225, 0.25); }
+                100% { color: rgba(225, 225, 225, .75); }
+                }
+                 
+                @-ms-keyframes pulse1 {
+                0% { color: rgba(225, 225, 225, .75); }
+                50% { color: rgba(225, 225, 225, 0.25); }
+                100% { color: rgba(225, 225, 225, .75); }
+                }
+
+.fg {
+width: 50%;
+padding: 1vw;
+margin: 1vw;
+}
+ 
+/* Estilo del área del input[file] */
+.drag-drop {
+height: 17vw;
+width: 17vw;
+background-color: rgb(221, 22, 22);
+border-radius: 100%;
+text-align: center;
+color: white;
+margin-left: 22%;
+}
+ 
+.drag-drop span.desc {
+display: block;
+font-size: 2vw;
+padding: 0 .5vw;
+color: black;
+}
+ 
+input[type="file"] {
+height: 10vh;
+opacity: 0;
+
+top: 0;
+left: 0;
+width: 100%; 
+z-index: 3;
+}
+ 
+/* Estilo del área del input[file] con :hover */
+ 
+.drag-drop:hover, input[type="file"]:hover {
+background-color: #2d0ba8;
+cursor: pointer;
+}
+ 
+.drag-drop:hover span.desc {
+color: #fff;
+} 
+ 
+/* Composición del icono de Upload con FontAwesome */
+.fa-stack { margin-top: 0vw; }
+ 
+.fa-stack .top { color: white; }
+ 
+.fa-stack .medium { 
+color: black;
+text-shadow: 0 0 .25vw #666;
+} 
+.fa-stack .bottom { color: rgba(225, 225, 225, .75); }
+
+.drag-drop:hover .pulsating {
+    animation: pulse1 1s linear infinite;
+    animation-direction: alternate ;
+    -webkit-animation: pulse1 1s linear infinite;
+    -webkit-animation-direction: alternate ;
+    }
+     
+    /* Keyframing de la animación */
+     
+    @keyframes pulse1 {
+    0% { color: rgba(225, 225, 225, .75); }
+    50% { color: rgba(225, 225, 225, 0.25); }
+    100% { color: rgba(225, 225, 225, .75); }
+    }
+     
+    @-moz-keyframes pulse1 {
+    0% { color: rgba(225, 225, 225, .75); }
+    50% { color: rgba(225, 225, 225, 0.25); }
+    100% { color: rgba(225, 225, 225, .75); }
+    }
+     
+    @-webkit-keyframes pulse1 {
+    0% { color: rgba(225, 225, 225, .75); }
+    50% { color: rgba(225, 225, 225, 0.25); }
+    100% { color: rgba(225, 225, 225, .75); }
+    }
+    
