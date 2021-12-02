@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="pp.css">
+    <link href="ppsubmit.css" rel="stylesheet">
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+    <title>PP</title>
+	<style>
+		 .table {display:table;}
+		 .row {display:table-row;}
+		 .cell {display: table-cell; padding: 5px;}
+		 .label {text-align: right;}
+	 </style>
+</head>
+<header>
+		<div class="row">
+			<div class="col-12">
+			<div class="wellcome">Wellcome! you have arrived to VAMP translator...</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+        	<div class="encabezado">"Vamp" is a group of english professors that, due to
+				the pandemic, were left unemployed and forced to find a new way of keep 
+				performing our profession. 
+					For this reason, we set up this web site for 
+				those enterprises or people that need a professional to translate
+        		documents from Spanish to English or vice versa.
+			</div>
+        </div>
+		</div>
+</header>
+<body>
+	<div class="row">
+		<div class="col-12">
+           	<div class="instr"><br><br><br><p><b><u>INSTRUCTIONS:</u></b></p></div>
+			<div class="parrafo">The method is very simple... you must upload your document to the page, 
+                english translators of our web will translate what you sent, the price 
+                of translation is $5 for each page, finally the document ie given back 
+                to you in a short time. the time estipulated is about 2 days depending 
+                on the number of pages.</div>
+		</div>
+		</div>
+
+
+
+
+
+
+
+
+<div class="cont1">
+
+<div class="row">
+	<div class="cont">
+		<div class="col-12">
+					
+						</div>
+						</div>
+				</div>
+			</div>
+		<div class="col-6">	
+				<div class="cont2">
+					<p><b><u>PERSONAL DATA:</u></b></p>
+					
+						<label>Name and surname:</label><br/>
+							<input type="text" id="nombre" value="" size="30"/><br/>
+																	
+							<label>Id:</label><br/>
+							<input type="text" id="dni" value="" size="30" maxlength="20" /><br/>
+																		
+							<label>Date of birth:</label><br/>
+							<input type="date" id="fechaNacimientoDia" size="30"><br/>
+																	
+							<label>Mobile:</label><br/>
+							<input type="text" id="movil" value="" size="30" maxlength="20"/><br/>
+
+							<label>Email:</label><br/>
+							<input type="text" id="email1" value="" size="30" /><br/>
+									
+							<label>Confirm email:</label><br/>
+							<input type="text" id="email2" value="" size="30" />							
+
+
+							<form class="form-amount" action="index.php" method="POST">
+										
+										&nbsp;&nbsp;&nbsp;&nbsp;<input class="btns" name="Submit Payment"
+										type="submit" value="pay">
+
+							</form>
+				</div>
+		</div>
+	</div>
+	</div>
+</body>					
+		
+
+<footer>
+	<div class="row">
+		<div class="col-6">
+			<div class="thissite">This site was developed by Marcos Molina.</div>
+			<div class="email">E-mail:mgma3032@hotmail.com</div>
+		</div>
+		<div class="col-6">	
+        	<div class="V"><a>V</a></div>
+			<div class="ampi">amp.translator</div>
+		</div>
+	</div>
+</footer>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="pp.js"></script>
+</body>
+</html>
